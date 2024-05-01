@@ -1,6 +1,8 @@
 import { Place } from './Place.interface.js';
 import { Publishable } from './utils/Publishable.interface.js';
 
+import { Amenities, Housings } from '../constants/index.js';
+
 export interface RentOffer extends Publishable {
   title: string;
   description: string;
@@ -9,18 +11,11 @@ export interface RentOffer extends Publishable {
   images: string[];
   isPremium: boolean;
   isFavorite: boolean;
-  housingType: 'apartment' | 'house' | 'room' | 'hotel';
+  housingType: Housings;
   roomCount: number;
   guestCount: number;
   rent: number;
-  amenities:
-    | 'Breakfast'
-    | 'Air conditioning'
-    | 'Laptop friendly workspace'
-    | 'Baby seat'
-    | 'Washer'
-    | 'Towels'
-    | 'Fridge';
+  amenities: Amenities[];
   commentCount: number;
   placeCoordinates: Place;
 }

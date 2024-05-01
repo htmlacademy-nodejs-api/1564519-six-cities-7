@@ -1,7 +1,7 @@
 import { User } from '../User.interface.js';
 
 export interface Publishable {
-  publicationDate: string;
+  publicationDate: Date;
   author: User;
   rating: number;
 }
