@@ -1,5 +1,5 @@
-import { Place } from './Place.js';
-import { Publishable } from './Publishable.js';
+import { Place } from './Place.interface.js';
+import { Publishable } from './utils/Publishable.interface.js';
 
 export interface RentOffer extends Publishable {
   title: string;

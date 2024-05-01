@@ -1,4 +1,4 @@
-import { User } from './User.js';
+import { User } from '../User.interface.js';
 
 export interface Publishable {
   publicationDate: string;
