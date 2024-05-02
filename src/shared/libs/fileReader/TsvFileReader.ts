@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 
 import { RentOffer } from '../../entities/RentOffer.interface.js';
-import { FileReader } from './fileReader.interface.js';
+import { FileReader } from './FileReader.interface.js';
 import { Amenities, User } from '../../entities/index.js';
 
 import { Housings } from '../../constants/Housings.js';
