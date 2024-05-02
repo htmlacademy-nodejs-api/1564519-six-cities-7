@@ -1,3 +1,4 @@
+#!/Users/biba/.nvm/versions/node/v20.12.2/bin/node
 import {
   CLIApplication,
   HelpCommand,
