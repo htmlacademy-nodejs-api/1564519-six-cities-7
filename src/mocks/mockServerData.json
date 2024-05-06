@@ -79,12 +79,7 @@
         "image66.png"
       ]
     ],
-    "isPremium": [true, false],
-    "isFavorite": [true, false],
     "housingType": ["apartment", "house", "room", "hotel"],
-    "roomCount": [1, 2, 3, 4, 5, 6],
-    "guestCount": [1, 2, 3, 4, 5, 6],
-    "rent": [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000],
     "amenities": [
       "Breakfast",
       "Washer",
@@ -94,7 +89,6 @@
       "Laptop friendly workspace",
       "Baby seat"
     ],
-    "commentCount": [1, 2, 3, 5, 7, 9, 0],
     "placeCoordinates": [
       { "latitude": 48.85661, "longitude": 2.351499 },
       { "latitude": 50.938361, "longitude": 6.959974 },
@@ -130,7 +124,6 @@
         "password": "qwe123",
         "status": "pro"
       }
-    ],
-    "rating": [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]
+    ]
   }
 }
