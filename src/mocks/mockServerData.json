@@ -97,30 +97,25 @@
       { "latitude": 53.550341, "longitude": 10.000654 },
       { "latitude": 51.225402, "longitude": 6.776314 }
     ],
-    "pubpublicationDate": [
-      "2021-05-06T08:12:40.281Z",
-      "2021-06-26T09:44:53.702Z",
-      "2022-02-15T18:29:02.021Z",
-      "2020-08-02T13:00:35.503Z",
-      "2023-10-10T02:45:10.149Z",
-      "2021-11-09T17:22:21.763Z"
-    ],
     "author": [
       {
         "name": "Майк Вазовски",
         "email": "abc@mail.ru",
+        "avatar": "avatar1.png",
         "password": "qwe123",
         "status": "common"
       },
       {
         "name": "Шрек",
         "email": "kek@mail.ru",
+        "avatar": null,
         "password": "qwe123",
         "status": "pro"
       },
       {
         "name": "biba",
         "email": "bib@pro.ru",
+        "avatar": "avatar3.png",
         "password": "qwe123",
         "status": "pro"
       }

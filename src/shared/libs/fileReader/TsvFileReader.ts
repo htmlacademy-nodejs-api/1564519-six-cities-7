@@ -2,7 +2,6 @@ import { readFileSync } from 'node:fs';
 
 import { RentOffer } from '../../entities/RentOffer.interface.js';
 import { FileReader } from './FileReader.interface.js';
-import { Amenities, User } from '../../entities/index.js';
 
 import { Housings } from '../../constants/Housings.js';
 
@@ -28,26 +27,22 @@ export class TSVFileReader implements FileReader {
     const [
       title,
       description,
-      publicationDate,
       city,
       previewImage,
       images,
+      housingType,
+      place,
+      user,
+      amenities,
       isPremium,
       isFavorite,
-      rating,
-      housingType,
       roomCount,
       guestCount,
-      rent,
-      amenities,
-      name,
-      email,
-      password,
-      status,
       commentCount,
-      latitude,
-      longitude,
-    ] = line.split('\t');
+      rent,
+      rating,
+      publicationDate,
+    ] = line.split('\t').map((el) => JSON.parse(el));
 
     return {
       title,
@@ -55,7 +50,7 @@ export class TSVFileReader implements FileReader {
       publicationDate: new Date(publicationDate),
       city,
       previewImage,
-      images: images.split(';'),
+      images,
       isPremium: !!isPremium,
       isFavorite: !!isFavorite,
       rating: +rating,
@@ -63,34 +58,11 @@ export class TSVFileReader implements FileReader {
       roomCount: +roomCount,
       guestCount: +guestCount,
       rent: +rent,
-      amenities: this.parseAmenities(amenities),
-      author: this.parseAuthor(
-        name,
-        email,
-        password,
-        status as 'pro' | 'common'
-      ),
+      amenities,
+      author: user,
       commentCount: +commentCount,
-      placeCoordinates: { latitude: +latitude, longitude: +longitude },
+      placeCoordinates: place,
     };
-  }
-
-  private parseAuthor(
-    name: string,
-    email: string,
-    password: string,
-    status: 'pro' | 'common'
-  ): User {
-    return {
-      name,
-      email,
-      password,
-      status,
-    };
-  }
-
-  private parseAmenities(input: string): Amenities[] {
-    return input.split(';') as Amenities[];
   }
 
   public read(): void {

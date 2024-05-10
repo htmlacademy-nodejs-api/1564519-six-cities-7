@@ -5,14 +5,13 @@ import { City } from './City.type.js';
 import { Place } from './Place.type.js';
 
 export type MockServerData = {
-  title: string[];
-  description: string[];
-  city: City[];
-  previewImage: string[];
+  titles: string[];
+  descriptions: string[];
+  cities: City[];
+  previewImages: string[];
   images: string[][];
-  housingType: Housings[];
+  housingTypes: Housings[];
   amenities: Amenities[];
   placeCoordinates: Place[];
-  pubpublicationDate: string[];
-  author: User[];
+  authors: User[];
 };
