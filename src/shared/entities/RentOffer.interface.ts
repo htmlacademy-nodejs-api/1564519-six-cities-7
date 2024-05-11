@@ -1,4 +1,4 @@
-import { Place } from './Place.interface.js';
+import { Place, City } from '../types/index.js';
 import { Publishable } from './utils/Publishable.interface.js';
 
 import { Amenities, Housings } from '../constants/index.js';
@@ -6,7 +6,7 @@ import { Amenities, Housings } from '../constants/index.js';
 export interface RentOffer extends Publishable {
   title: string;
   description: string;
-  city: string;
+  city: City;
   previewImage: string;
   images: string[];
   isPremium: boolean;

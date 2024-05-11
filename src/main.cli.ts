@@ -1,6 +1,7 @@
 #!/Users/biba/.nvm/versions/node/v20.12.2/bin/node
 import {
   CLIApplication,
+  GenerateCommand,
   HelpCommand,
   ImportCommand,
   VersionCommand,
@@ -12,6 +13,7 @@ function bootstrap() {
     new HelpCommand(),
     new VersionCommand(),
     new ImportCommand(),
+    new GenerateCommand(),
   ]);
 
   cliApplication.processCommand(process.argv);

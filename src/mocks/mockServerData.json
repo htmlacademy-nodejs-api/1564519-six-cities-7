@@ -1,0 +1,124 @@
+{
+  "api": {
+    "title": ["Offer 1", "Offer 2", "Offer 3", "Offer 4", "Offer 5", "Offer 6"],
+    "description": [
+      "Description 1",
+      "Description 2",
+      "Description 3",
+      "Description 4",
+      "Description 5",
+      "Description 6",
+      "Description 7",
+      "Description 8"
+    ],
+    "city": [
+      { "name": "Paris", "latitude": 48.85661, "longitude": 2.351499 },
+      { "name": "Cologne", "latitude": 50.938361, "longitude": 6.959974 },
+      { "name": "Brussels", "latitude": 50.846557, "longitude": 4.351697 },
+      { "name": "Amsterdam", "latitude": 52.370216, "longitude": 4.895168 },
+      { "name": "Hamburg", "latitude": 53.550341, "longitude": 10.000654 },
+      { "name": "Dusseldorf", "latitude": 51.225402, "longitude": 6.776314 }
+    ],
+    "previewImage": [
+      "previewImage1.png",
+      "previewImage2.png",
+      "previewImage3.png",
+      "previewImage4.png",
+      "previewImage5.png",
+      "previewImage6.png",
+      "previewImage7.png",
+      "previewImage8.png"
+    ],
+    "images": [
+      [
+        "image11.png",
+        "image12.png",
+        "image13.png",
+        "image14.png",
+        "image15.png",
+        "image16.png"
+      ],
+      [
+        "image21.png",
+        "image22.png",
+        "image23.png",
+        "image24.png",
+        "image25.png",
+        "image26.png"
+      ],
+      [
+        "image31.png",
+        "image32.png",
+        "image33.png",
+        "image34.png",
+        "image35.png",
+        "image36.png"
+      ],
+      [
+        "image41.png",
+        "image42.png",
+        "image43.png",
+        "image44.png",
+        "image45.png",
+        "image46.png"
+      ],
+      [
+        "image51.png",
+        "image52.png",
+        "image53.png",
+        "image54.png",
+        "image55.png",
+        "image56.png"
+      ],
+      [
+        "image61.png",
+        "image62.png",
+        "image63.png",
+        "image64.png",
+        "image65.png",
+        "image66.png"
+      ]
+    ],
+    "housingType": ["apartment", "house", "room", "hotel"],
+    "amenities": [
+      "Breakfast",
+      "Washer",
+      "Towels",
+      "Fridge",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat"
+    ],
+    "placeCoordinates": [
+      { "latitude": 48.85661, "longitude": 2.351499 },
+      { "latitude": 50.938361, "longitude": 6.959974 },
+      { "latitude": 50.846557, "longitude": 4.351697 },
+      { "latitude": 52.370216, "longitude": 4.895168 },
+      { "latitude": 53.550341, "longitude": 10.000654 },
+      { "latitude": 51.225402, "longitude": 6.776314 }
+    ],
+    "author": [
+      {
+        "name": "Майк Вазовски",
+        "email": "abc@mail.ru",
+        "avatar": "avatar1.png",
+        "password": "qwe123",
+        "status": "common"
+      },
+      {
+        "name": "Шрек",
+        "email": "kek@mail.ru",
+        "avatar": null,
+        "password": "qwe123",
+        "status": "pro"
+      },
+      {
+        "name": "biba",
+        "email": "bib@pro.ru",
+        "avatar": "avatar3.png",
+        "password": "qwe123",
+        "status": "pro"
+      }
+    ]
+  }
+}
