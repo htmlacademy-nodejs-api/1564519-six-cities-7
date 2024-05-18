@@ -6,6 +6,8 @@ import { TSVOfferGenerator } from '../../shared/libs/offerGenerator/tsvOfferGene
 import { TSVFileWriter } from '../../shared/libs/fileWriter/tsvFileWriter.js';
 import { getErrorMessage } from '../../shared/helpers/index.js';
 
+const RADIX = 10;
+
 export class GenerateCommand implements Command {
   private initialData: MockServerData;
 
@@ -32,7 +34,7 @@ export class GenerateCommand implements Command {
 
   public async execute(...parameters: string[]): Promise<void> {
     const [count, filepath, url] = parameters;
-    const offerCount = Number.parseInt(count, 10);
+    const offerCount = Number.parseInt(count, RADIX);
 
     try {
       await this.load(url);
